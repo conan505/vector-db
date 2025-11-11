@@ -1,16 +1,12 @@
-# This is a sample Python script.
+import numpy as np
 
-# Press ⌃F5 to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# Generate 5 random 3D vectors
+vectors = np.random.rand(5, 3)
+query = np.random.rand(1, 3)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('RahulG')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Euclidean distance (brute force)
+distances = np.linalg.norm(vectors - query, axis=1)
+print("vectors:", vectors)
+print("Distances:", distances)
+closest_idx = np.argmin(distances)
+print("Closest vector:", vectors[closest_idx])
