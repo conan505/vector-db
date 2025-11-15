@@ -7,9 +7,6 @@ import numpy as np
 import time
 from vectordb import VectorDB
 
-print("=" * 70)
-print("WHY DO WE NEED INDEXES?")
-print("=" * 70)
 
 print("\n📊 EXPERIMENT 1: The Curse of Dimensionality")
 print("=" * 70)
