@@ -273,7 +273,6 @@ if __name__ == "__main__":
   - When 100% accuracy is required
   - As a baseline for comparison
   - Development and testing
-  
-🎯 NEXT: Let's build IVF Index for 10-20x speedup!
+
     """)
 
