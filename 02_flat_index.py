@@ -252,10 +252,7 @@ def compare_metrics():
 if __name__ == "__main__":
     demo_flat_index()
     compare_metrics()
-    
-    print("\n" + "=" * 70)
-    print("SUMMARY: Flat Index")
-    print("=" * 70)
+
     print("""
 ✅ PROS:
   - Simple to implement
